@@ -31,5 +31,10 @@ namespace EmployeeWeb.Data
                     new Employee(3, "fil", "dev", "IT"),
                 ];
         }
+        public List<Admin> admins = new List<Admin>() 
+        {
+            new Admin(1, "Terry","Admin"),
+            new Admin(2, "Sam","SuperAdmin")
+        };
     }
 }

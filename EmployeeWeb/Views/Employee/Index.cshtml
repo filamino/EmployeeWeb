@@ -1,0 +1,27 @@
+﻿@model List<Employee>
+
+<h4>Employees List @Model.Count</h4>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Position</th>
+            <th scope="col">Department</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var list in Model)
+        {
+            <tr>
+                <th scope="row">@list.Id</th>
+                <td>@list.Name</td>
+                <td>@list.Position</td>
+                <td>@list.Department</td>
+            </tr>
+
+        }
+        
+    </tbody>
+</table>
